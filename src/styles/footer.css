@@ -1,0 +1,72 @@
+.footer{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 16px;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+    clip-path: path("M 0 0 H 400 V 100 H 0 Z M 200 0 m -30 0 a 30 30 0 1 0 60 0 a 30 30 0 1 0 -60 0");
+
+}
+.footer.footer-home-active {
+  background-color: white;
+}
+.home{
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/home.png');
+    background-size: cover;
+}
+.mytasks{
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/tasks-blue.png');
+    background-size: cover;
+}
+.settings{
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/settings-blue.png');
+    background-size: cover;
+}
+.aipage{
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/AI-blue.png');
+    background-size: cover;
+}
+.add-button{
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/add-button.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+
+.footer .home.active {
+    background-image: url('../images/home-white.png');
+  }
+  
+  .footer .mytasks.active {
+    background-image: url('../images/tasks-white.png');
+  }
+  
+  .footer .settings.active {
+    background-image: url('../images/settings-white.png');
+  }
+  
+  .footer .aipage.active {
+    background-image: url('../images/ai-white.png');
+  }
+  

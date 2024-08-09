@@ -1,0 +1,171 @@
+
+.task-container {
+    width: 100%;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#E9ECF2; */
+    background-color:#ece9e9;
+
+  }
+
+  .navigation{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-button{
+    width: 260px;
+    background-color:#36C7A4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 0;
+    margin: 1rem 0;
+  }
+  .main-button:hover{
+    background-color:hsl(166, 57%, 60%);
+
+  }
+  .category-card {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color:#ffffff;
+    width: 340px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+  }
+  .category-content{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 55px;
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 0 8px;
+
+  }
+  .category-title {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.781);
+    margin-bottom: 4px;
+    font-weight: 700;
+
+  }
+  
+  .category-description {
+    font-size: 10px;
+    color: #7A7A7A;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+
+  
+  .edit-button,
+  .delete-button {
+    background-color: #3D77AD;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #0056b3;
+  }
+  .menu {
+    position: absolute;
+    top: 20px; /* Adjust position */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  .twodots{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3px;
+    position: relative;
+    height: 60px;
+    width: 14px;
+  }
+  .graydot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #C7C7C7;
+  }
+
+  .dot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 4px);
+    grid-gap: 5px;
+    cursor: grab;
+    padding: 5px;
+    margin-right: 4px;
+  }
+  
+  .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #3D77AD;
+    border-radius: 50%;
+  }
+  .drag-handle {
+    
+    display: inline-block; /* Ensure it behaves as a block for the grid layout */
+  }
+  
+  .drag-handle:active {
+    cursor: grabbing;
+  }
+
+  .blueline{
+    width: 8px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, #113A61,#2378C7 );
+    margin-right: 0.5rem;
+    border-radius: 16px;
+  }
+
+  .notification-circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #113A61,#2378C7 );
+    color: white;
+    position: relative;
+    right: 10px;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

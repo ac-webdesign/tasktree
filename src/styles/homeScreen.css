@@ -1,0 +1,141 @@
+/* src/styles/homeScreen.css */
+
+  .home-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ece9e9;
+  }
+.selection-carousel{
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+  padding: 1rem;
+}
+.hometask{
+  width: 200px;
+  height: 210px;
+  background-image: linear-gradient(to top, #113A61,#2378C7 );
+  color: white;
+  border-radius: 32px;
+  box-shadow: 3px 3px 5px 1px #29292986;
+  padding: 1.6rem;
+}
+.tasks-container{
+  display: flex;
+  width: 90vw;
+  justify-content: start;
+  align-items: start;
+  overflow: scroll;
+}
+
+.taskheader{
+  display: flex;
+  gap: 1.4rem;
+  justify-content: left;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.taskheader img{
+  width: 30px;
+}
+.tasktitle{
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+.task-date{
+  font-size: 0.5rem;
+  font-weight: 300;
+}
+.task-count{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    position:relative;
+    top: -50px;
+    right: 0px;
+}
+.task-count img{
+  width: 20px;
+}
+.task-count .notification-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  right: 4px;
+}
+.search-bar{
+  width: 100%;
+  background-color: #ffffff;
+  height: 45px;
+  margin: 1.4rem 0;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+  color: #8d8d8d;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.search-bar::placeholder{
+  color: rgb(192, 192, 192);
+}
+.search-bar:focus{
+  outline: none;
+  border: none;
+}
+.search img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  top: 34px;
+}
+.search{
+  width: 300px;
+  align-items: center;
+  position: relative;
+
+}
+.selection-container{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.selection{
+  width: 90px;
+  background-color: #eff5ff;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  color: #8D8D8D;
+  position: relative;
+}
+.selection.active {
+  background-color: white; 
+}
+.red-dot{
+  width: 10px;
+  height: 10px;
+  background-image: radial-gradient(red,white,red);
+  border-radius: 50%;
+}
+.selection .red-dot{
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+.selection.active .red-dot {
+  display: block;
+}

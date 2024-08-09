@@ -1,0 +1,60 @@
+.task-header, .home-header, .settings-header, .ai-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #113A61,#2378C7 );
+    color: white;
+    height: 8rem;
+    border-radius: 0 0 30px 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 2rem;
+    /* margin-bottom: 1rem; */
+  }
+  .task-header .icon{
+    height: 60px;
+    width: 60px;
+    background-image: url('../images/tasks-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .arrow-tasks{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .arrow{
+    width: 24px;
+    height: 18px;
+    background-image: url('../images/leftarrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+.icon-home{
+    height: 60px;
+    width: 70px;
+    background-image: url('../images/home-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-settings{
+    height: 60px;
+    width: 70px;
+    background-image: url('../images/settings-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-ai{
+  height: 60px;
+    width: 60px;
+    background-image: url('../images/ai-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tasks{
+  text-align: center;
+  margin-left: 1rem;
+}
+
