@@ -71,7 +71,7 @@ function TaskScreen() {
               <span className="dot"></span>
               <span className="dot"></span>
             </div>
-            <Link to={`/category/${category._id}`} style={{ textDecoration: 'none' }}>
+            <Link to={`/viewcategory/${category._id}`} style={{ textDecoration: 'none' }}>
               <div className="category-content">
                 <h2 className="category-title">{category.title}</h2>
                 <p className="category-description">{category.description}</p>

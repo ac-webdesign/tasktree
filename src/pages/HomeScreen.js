@@ -88,7 +88,7 @@ function HomeScreen() {
       <div className="tasks-container">
         <div className="selection-carousel">
           {filteredCategories.map((category, index) => (
-            <Link key={category._id} to={`/category/${category._id}`} style={{ textDecoration: 'none' }}>
+            <Link key={category._id} to={`/viewcategory/${category._id}`} style={{ textDecoration: 'none' }}>
               <div>
                 <div className={`hometask task${index + 1}`}>
                   <div className="taskheader">
