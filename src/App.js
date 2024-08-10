@@ -9,9 +9,26 @@ import Settings from './pages/Settings';
 import TaskScreen from './pages/TaskScreen';
 import './styles/styles.css';
 import ViewCategory from './pages/ViewCategory';
+import { useState, useEffect } from 'react';
+import SplashScreen from './pages/SplashScreen';
+
+
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000); // Simulates a 3-second loading time
+  
+    return () => clearTimeout(timer);
+  }, []);
+  
   return (
-    
+    <>
+      {loading ? (
+        <SplashScreen/>
+      ): (
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/mytasks" element={<TaskScreen />} />
@@ -22,7 +39,8 @@ function App() {
         <Route path="/edit-subcategory/:id/:subcategoryIndex" element={<EditSubcategoryScreen />} />
         <Route path="/generate-ai" element={<GenerateAIScreen />} />
       </Routes>
-    
+      )}
+    </>
   );
 }
 
