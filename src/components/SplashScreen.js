@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/splashScreen.css'
-
+import forkimage from '../images/tasktreefork.png'
 const SplashScreen = () => {
   const [progress, setProgress] = useState(0);
 
@@ -13,7 +13,7 @@ const SplashScreen = () => {
         }
         return Math.min(oldProgress + 7, 100);
       });
-    }, 250);
+    }, 150);
 
     return () => {
       clearInterval(interval);
@@ -23,6 +23,7 @@ const SplashScreen = () => {
   return (
     <div className="splash-screen">
       <div className="splash-content">
+        <img src={forkimage} alt="forkimage" className='forkimage'/>
         <h1>TASKTREE</h1>
         <div className="progress-bar-container">
           <div

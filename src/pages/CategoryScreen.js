@@ -1,8 +1,7 @@
-// src/pages/CategoryScreen.js
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import '../styles/categoryScreen.css'; // Import your CSS file
+import '../styles/categoryScreen.css'; 
 
 function CategoryScreen() {
   const { id } = useParams();

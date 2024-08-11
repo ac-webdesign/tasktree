@@ -10,8 +10,9 @@ import TaskScreen from './pages/TaskScreen';
 import './styles/styles.css';
 import ViewCategory from './pages/ViewCategory';
 import { useState, useEffect } from 'react';
-import SplashScreen from './pages/SplashScreen';
-
+import SplashScreen from './components/SplashScreen';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,18 +20,21 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Simulates a 3-second loading time
+       }, 1000); // Simulates a 3-second loading time
   
     return () => clearTimeout(timer);
   }, []);
-  
+
+
   return (
     <>
       {loading ? (
         <SplashScreen/>
       ): (
       <Routes>
-        <Route path="/" element={<HomeScreen />} />
+        <Route path='/' element={ <Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/home" element={<HomeScreen />} />
         <Route path="/mytasks" element={<TaskScreen />} />
         <Route path="/settings" element={<Settings />} />
         <Route path='/viewcategory/:id' element={<ViewCategory/>}/>
@@ -39,6 +43,7 @@ function App() {
         <Route path="/edit-subcategory/:id/:subcategoryIndex" element={<EditSubcategoryScreen />} />
         <Route path="/generate-ai" element={<GenerateAIScreen />} />
       </Routes>
+   
       )}
     </>
   );

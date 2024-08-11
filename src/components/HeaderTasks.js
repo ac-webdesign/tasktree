@@ -8,7 +8,7 @@ function HeaderTasks() {
 
   const getHeaderContent = () => {
     switch (location.pathname) {
-      case '/':
+      case '/home':
         return (
           <div className="home-header">
             <div className="navigation">
@@ -22,7 +22,7 @@ function HeaderTasks() {
           <div className="task-header">
             <div className="navigation">
               <div className="arrow-tasks">
-                <NavLink to="/" className={({ isActive }) => isActive ? 'arrow active' : 'arrow'}></NavLink>
+                <NavLink to="/home" className={({ isActive }) => isActive ? 'arrow active' : 'arrow'}></NavLink>
                 <div className="tasks">Your tasks</div>
               </div>
               <div className="icon"></div>
@@ -34,7 +34,7 @@ function HeaderTasks() {
           <div className="settings-header">
             <div className="navigation">
               <div className="arrow-tasks">
-                <NavLink to="/" className={({ isActive }) => isActive ? 'arrow active' : 'arrow'}></NavLink>
+                <NavLink to="/home" className={({ isActive }) => isActive ? 'arrow active' : 'arrow'}></NavLink>
                 <div className="tasks">Settings</div>
               </div>
               <div className="icon-settings"></div>
@@ -46,7 +46,7 @@ function HeaderTasks() {
           <div className="ai-header">
             <div className="navigation">
               <div className="arrow-tasks">
-                <NavLink to="/" className={({ isActive }) => isActive ? 'arrow active' : 'arrow'}></NavLink>
+                <NavLink to="/home" className={({ isActive }) => isActive ? 'arrow active' : 'arrow'}></NavLink>
                 <div className="tasks">AI generator</div>
               </div>
               <div className="icon-ai"></div>

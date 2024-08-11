@@ -3,7 +3,10 @@
     src: url('../assets/fonts/ANDMOREY.otf') format('opentype');
   }
   
-
+.forkimage{
+  width: 50px;
+  margin-bottom: 2rem;
+}
 .splash-screen {
     display: flex;
     justify-content: center;

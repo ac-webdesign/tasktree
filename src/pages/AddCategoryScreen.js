@@ -118,7 +118,7 @@ function AddCategoryScreen() {
         )}
         <div className="d-flex justify-content-between">
           <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Save</button>
-          <button type="button" className="btn btn-outline-secondary" onClick={() => navigate('/')}>Cancel</button>
+          <button type="button" className="btn btn-outline-secondary" onClick={() => navigate('/home')}>Cancel</button>
         </div>
       </form>
     </div>
